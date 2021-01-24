@@ -41,5 +41,14 @@ public class UserService {
 	public User findByEmailLike(String email) {
 		return userRepository.findByEmailLike("%"+email+"%");
 	}
+	public boolean isUserPresent(String email) {
+		// TODO Auto-generated method stub
+		User u = userRepository.findByEmailLike("%"+email+"%");
+		if(u!=null) {
+			return true;
+		}else {
+			return false;
+		}
+	}
 
 }
