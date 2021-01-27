@@ -1,0 +1,27 @@
+
+.portfolio {
+    margin-top: 30px;
+}
+
+.portfolioImage {
+    display: block;    
+    width: 90%;
+    height: 50%;
+}
+
+.portfolioRow {
+    margin-left: 25px;
+}
+
+.portfolioCol {       
+    margin-right: auto;
+    margin-left: auto;
+    overflow-wrap: break-word;
+       
+}
+
+.portfolioCol p {
+    padding-top: 25px;
+    padding-right: 35px;
+}
+

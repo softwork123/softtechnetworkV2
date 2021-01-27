@@ -1,0 +1,57 @@
+/*Header Styling*/
+.navbar {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    background: #1d1d35!important;
+}
+
+
+
+
+/*Logo Styling*/
+.navbar-brand img {
+    height: 30px;
+
+}
+
+/* Header Menu Styling */  
+.navbar-nav li {
+    padding-right: 11px;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #0785D1;    
+    padding-top: 12px;
+}
+
+/*Dropdown Menu Font size*/
+.dropdown-item {
+	font-size: 12px;
+	font-weight: 400;	
+}
+
+/* Header Menu Hover Styling */
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: white !important;
+    
+}
+
+
+
+/*Styling for Responsive Design*/
+ @media (max-width: 768px) {
+
+    /*RightSide Menu*/
+    .navbar-collapse.collapsing,
+    .navbar-collapse.show {
+    text-align : center; 
+    }
+
+    
+  }
+  
+
+  
+
