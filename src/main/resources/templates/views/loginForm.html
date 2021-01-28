@@ -3,13 +3,13 @@
   xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
   layout:decorate="~{fragments/main_layout}" >
 <head>
-<title>Register Form</title>
+<title th:text="#{login.label}"></title>
 </head>
 <body>
 <div  layout:fragment="content" class="container mySpace">
 <!--  "param.error" is comming from spring security-->
 <div class="alert alert-danger" th:if="${param.error}">
-<h2>Invalid Email or Password</h2>
+<h2 th:text="#{invalid.emailorpwd}"></h2>
 </div>
          <form th:action="@{/login}"  method="post">
          <div class="form-group">
