@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head>
 <title th:text="#{app.title}"></title>
@@ -17,4 +17,41 @@
    <div th:replace="fragments/ufooter::footer">
    </div>
 </body>
+</html> -->
+
+<!-- Newly Implemented Heading -->
+<!DOCTYPE html>
+<html xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+<head>
+	<meta charset="utf-8">	
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title th:text="#{app.title}"></title>
+	<link rel="stylesheet" href="../../static/css/style.css" th:href="@{css/style.css}"/>
+	<link rel="stylesheet" href="../../static/css/materia/bootstrap.min.css" th:href="@{css/materia/bootstrap.min.css}"/>
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/carousel.css">   
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/style.css">
+	
+	<script th:src="@{webjars/jquery/jquery.min.js}"></script>
+	<script th:src="@{webjars/bootstrap/js/bootstrap.min.js}"></script>
+	  
+</head>
+
+<body>
+
+   <div th:replace="fragments/uheader::header">
+   </div>
+   
+   <div layout:fragment="content">
+   </div>
+   
+   <div th:replace="fragments/ufooter::footer">
+   </div>
+   
+</body>
+
 </html>
