@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 
 <html xmlns:th="http://www.thymeleaf.org"
-  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-  layout:decorate="~{fragments/main_layout}" >
-  
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{fragments/main_layout}">
+
 <head>
 
 
@@ -11,61 +11,72 @@
 
 <body>
 
-	<div  layout:fragment="content" class="content">
-	
-	<div class="container-fluid">
+	<div layout:fragment="content" class="content">
 
-        <div class="row justify-content-center">
+		<div class="container-fluid">
 
-            <div class="col-lg-4 col-md-6 col-sm-9">
-            
+			<div class="row justify-content-center">
 
-                <form class="login-form" th:action="@{/login}"  method="post">
-
-                    <div class="form-group">
-                    
-                    <label for="exampleInputEmail1" th:text="#{email.label}"></label>
-                    <input type="email" class="form-control"  id="email" name="username"aria-describedby="emailHelp">
-
-                    
-                    
-                    </div>
-
-                    <div class="form-group">
-
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="password" name="password">
-                    <p><a href="#">Forgot Password</a></p>
-
-                    </div>                    
-
-                    <button type="submit" class="btn btn-primary btn-block login">Log In</button>
-                    
-                   
+				<div class="col-lg-4 col-md-6 col-sm-9">
 
 
-                    <div class="googleSignIn justify-content-center">
-                    
-                     <p>Don't Have an account? <a href=#><span class="mr-auto">Sign Up</span></a></p>
+					<form class="login-form" th:action="@{/login}" method="post">
 
-                        <hr/> 
-                        
-                        <p> <strong>Or</strong> Sign In with Google</p>
+						<div class="form-group">
 
-                        <a href="#"><img src="images/googleplus.png" alt="google" width="64px" height="64px"></a>
-                                               
-                     </div>
-                </form>
+							<label for="exampleInputEmail1" th:text="#{email.label}"></label>
+							<input type="email" class="form-control" id="email"
+								name="username" aria-describedby="emailHelp">
 
-            </div>
 
-        </div>
 
-    </div>
-	
-	
-    </div>
-    
+						</div>
+
+						<div class="form-group">
+
+							<label for="exampleInputPassword1">Password</label> <input
+								type="password" class="form-control" id="password"
+								name="password">
+							<p>
+								<a href="#">Forgot Password</a>
+							</p>
+
+						</div>
+
+						<button type="submit" class="btn btn-primary btn-block login">Log
+							In</button>
+
+
+
+
+						<div class="googleSignIn justify-content-center">
+
+							<p>
+								Don't Have an account? <a href=#><span class="mr-auto">Sign
+										Up</span></a>
+							</p>
+
+							<hr />
+
+							<p>
+								<strong>Or</strong> Sign In with Google
+							</p>
+
+							<a href="#"><img src="images/googleplus.png" alt="google"
+								width="64px" height="64px"></a>
+
+						</div>
+					</form>
+
+				</div>
+
+			</div>
+
+		</div>
+
+
+	</div>
+
 </body>
 
 </html>
@@ -84,7 +95,7 @@
 <body>
 <div  layout:fragment="content" class="container mySpace content">
 
-	<!--  "param.error" is comming from spring security-->
+	/*  "param.error" is comming from spring security*/
 	<div class="alert alert-danger" th:if="${param.error}">
 	
 		<h2 th:text="#{invalid.emailorpwd}"></h2>
@@ -96,7 +107,7 @@
    		<div class="form-group">   	
 			<label for="email" class="form-control-label" th:text="#{email.label}"></label>
 	        <input type="text" class="form-control" id="email" name="username"/>
-	        <!-- The above name="username" is mandatory because spring security will identify with that name-->         
+	        /* The above name="username" is mandatory because spring security will identify with that name*/       
   	 	</div>
   	 	
   	 
