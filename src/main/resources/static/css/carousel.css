@@ -1,7 +1,8 @@
 /*---Slider----*/
 
 .carousel-item {
-    height: 100vh;
+	margin-top: 50px;
+    height: 90vh;
 }
 
 .carousel-control-prev-icon, .carousel-control-next-icon {

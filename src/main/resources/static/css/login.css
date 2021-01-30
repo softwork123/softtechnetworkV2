@@ -1,0 +1,38 @@
+.login-form {   
+    margin-top: 150px;
+    margin-bottom: 100px;
+    border: 1px solid black;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0  #1d1d35;
+     text-transform: uppercase;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    line-height: 3;
+    
+}
+
+.googleSignIn {   
+    text-align: center;
+}
+
+.googleSignIn hr {
+    border-top: 1px solid  #29b1e5;
+}
+
+.form-control {
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+.login {
+	border-radius: 25px;
+	background: #0785D1;
+}
+
+.login.activr,
+.login:hover {
+	background:  #1d1d35; 
+}
+

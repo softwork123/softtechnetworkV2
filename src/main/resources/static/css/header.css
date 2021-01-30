@@ -4,7 +4,9 @@
     font-weight: 700;
     font-size: 15px;
     letter-spacing: 1.5px;
-    background: #1d1d35!important;
+    background: #1d1d35 !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;   	
 }
 
 
@@ -12,7 +14,7 @@
 
 /*Logo Styling*/
 .navbar-brand img {
-    height: 30px;
+    height: 40px;
 
 }
 
@@ -20,9 +22,9 @@
 .navbar-nav li {
     padding-right: 11px;
 }
-.navbar-light .navbar-nav .nav-link {
+.navbar-dark .navbar-nav .nav-link {
     color: #0785D1;    
-    padding-top: 12px;
+    
 }
 
 /*Dropdown Menu Font size*/
@@ -32,8 +34,8 @@
 }
 
 /* Header Menu Hover Styling */
-.navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .nav-link:hover {
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
     color: white !important;
     
 }
@@ -52,6 +54,10 @@
     
   }
   
-
+  .content {
+  	margin-top: 11px !important;
+  }
+  
+  
   
 
