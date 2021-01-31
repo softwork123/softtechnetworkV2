@@ -18,9 +18,15 @@
 			<div class="row justify-content-center">
 
 				<div class="col-lg-4 col-md-6 col-sm-9">
-
+					
 
 					<form class="login-form" th:action="@{/login}" method="post">
+					<!--   "param.error" is comming from spring security-->
+					<div class="alert alert-danger" th:if="${param.error}">
+
+						<h2 th:text="#{invalid.emailorpwd}"></h2>
+
+					</div>
 
 						<div class="form-group">
 
