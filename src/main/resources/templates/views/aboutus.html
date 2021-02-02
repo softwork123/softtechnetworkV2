@@ -1,10 +1,57 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<title >Aboutus</title>
+
+<html xmlns:th="http://www.thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	  layout:decorate="~{fragments/main_layout}">
+
+<head>	
+	
 </head>
+
 <body>
 
+<div layout:fragment="content" class="content">
+
+	<div class="container-fluid">
+
+		<div class="row justify-content-center">
+		
+			<div class="col-lg-10 col-md-6 col-sm-9">
+			
+			<div class="content-box aboutUs">
+			
+			<h1 th:text="#{header.aboutus}"></h1>
+			
+			<hr>
+			
+			<p>At Caritor Solutions, we are passionate in our commitment to innovation and delivering value to our clients. 
+			We are driven by a passion to deliver solutions that are on the cutting-edge of technology. 
+			It is this principle that lets us deliver ground breaking solutions that are "first to go-to-market". 
+			We continuously strive to give our partners the best of services and implement innovative solutions.</p>
+			
+			<p>Caritor's experienced team of professionals are a pool of rich talent, with skills that span the entire 
+			spectrum of Industry Verticals and Technologies. A top management comprising of individuals who have contributed 
+			immensely to the IT Sector, with decades of experience in Fortune 500 companies across the globe.</p>
+			 
+			 <p>With Caritor's Oracle Application Services and Solutions, our focus is on the entire spectrum of Oracle Applications 
+			 and our aim is to realize best value and accelerate profitable growth for our clients through enhancement and extensions 
+			 to Oracle Applications. We specialize in providing quality Consulting Services including Design, Development, Extension and 
+			 Maintenance of Financials, SCM, CRM & Manufacturing based Oracle Applications.</p>
+			 
+			 <p>We partner with our clients to rapidly implement their business models by aligning Best Practices and Methodologies with 
+			 Application Technology to maximize their returns on IT investments.</p>
+			
+			</div>
+			
+			</div>
+
+		</div>
+		
+	</div>
+
+
+</div>   
+
 </body>
+
 </html>

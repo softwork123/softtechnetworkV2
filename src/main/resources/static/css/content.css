@@ -1,0 +1,40 @@
+.content-box > h1 {
+	text-align: center;
+	text-transform: uppercase;
+    font-weight: 700;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;  
+    color: #0785D1;
+}
+
+.content-box > hr {
+    border-top: 2px solid  #1d1d35;
+}
+
+.content-box {
+	margin-top: 150px;
+    margin-bottom: 100px;
+    border: 1px solid black;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0  #1d1d35;
+    letter-spacing: 2px;
+}
+
+.button {
+	border-radius: 25px;
+	background: #0785D1;
+}
+
+.button.activr,
+.button:hover {
+	background:  #1d1d35; 
+}
+
+.formDetails {
+	text-transform: uppercase;
+    font-weight: 700;
+    font-size: 15px;    
+    line-height: 3;
+}
+

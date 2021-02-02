@@ -19,60 +19,66 @@
 
 				<div class="col-lg-4 col-md-6 col-sm-9">
 					
+					<div class="content-box">
+						
+						<h1 th:text="#{header.login}"></h1>
+			
+						<hr>
 
-					<form class="login-form" th:action="@{/login}" method="post">
-					<!--   "param.error" is comming from spring security-->
-					<div class="alert alert-danger" th:if="${param.error}">
-
-						<h2 th:text="#{invalid.emailorpwd}"></h2>
-
+						<form class="login-form formDetails" th:action="@{/login}" method="post">
+						<!--   "param.error" is comming from spring security-->
+						<div class="alert alert-danger" th:if="${param.error}">
+	
+							<h2 th:text="#{invalid.emailorpwd}"></h2>
+	
+						</div>
+	
+							<div class="form-group">
+	
+								<label for="exampleInputEmail1" th:text="#{email.label}"></label>
+								<input type="email" class="form-control" id="email"
+									name="username" aria-describedby="emailHelp">
+	
+	
+	
+							</div>
+	
+							<div class="form-group">
+	
+								<label for="exampleInputPassword1">Password</label> <input
+									type="password" class="form-control" id="password"
+									name="password">
+								<p>
+									<a href="#">Forgot Password</a>
+								</p>
+	
+							</div>
+	
+							<button type="submit" class="btn btn-primary btn-block button" th:text="#{header.login}"></button>
+	
+	
+	
+	
+							<div class="googleSignIn justify-content-center">
+	
+								<p>
+									Don't Have an account? <a href=#><span class="mr-auto">Sign
+											Up</span></a>
+								</p>
+	
+								<hr />
+	
+								<p>
+									<strong>Or</strong> Sign In with Google
+								</p>
+	
+								<a href="#"><img src="images/googleplus.png" alt="google"
+									width="64px" height="64px"></a>
+	
+							</div>
+						</form>
+					
 					</div>
-
-						<div class="form-group">
-
-							<label for="exampleInputEmail1" th:text="#{email.label}"></label>
-							<input type="email" class="form-control" id="email"
-								name="username" aria-describedby="emailHelp">
-
-
-
-						</div>
-
-						<div class="form-group">
-
-							<label for="exampleInputPassword1">Password</label> <input
-								type="password" class="form-control" id="password"
-								name="password">
-							<p>
-								<a href="#">Forgot Password</a>
-							</p>
-
-						</div>
-
-						<button type="submit" class="btn btn-primary btn-block login">Log
-							In</button>
-
-
-
-
-						<div class="googleSignIn justify-content-center">
-
-							<p>
-								Don't Have an account? <a href=#><span class="mr-auto">Sign
-										Up</span></a>
-							</p>
-
-							<hr />
-
-							<p>
-								<strong>Or</strong> Sign In with Google
-							</p>
-
-							<a href="#"><img src="images/googleplus.png" alt="google"
-								width="64px" height="64px"></a>
-
-						</div>
-					</form>
 
 				</div>
 

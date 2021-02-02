@@ -1,0 +1,7 @@
+
+.aboutUs > p {
+	text-transform: none;
+	font-weight: 200;
+	font-size: 20px;
+	line-height: 2;
+}
