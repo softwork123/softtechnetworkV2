@@ -22,11 +22,13 @@
 }
 
 .button {
+	
+	
 	border-radius: 25px;
 	background: #0785D1;
 }
 
-.button.activr,
+.button.active,
 .button:hover {
 	background:  #1d1d35; 
 }
@@ -38,3 +40,7 @@
     line-height: 3;
 }
 
+.custom-checkbox {
+	font-size: 15px;
+	font-weight: 400;
+}

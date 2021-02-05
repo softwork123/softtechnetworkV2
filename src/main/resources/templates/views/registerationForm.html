@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org"
   xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
   layout:decorate="~{fragments/main_layout}" >
@@ -6,8 +6,8 @@
 <title>Register Form</title>
 </head>
 <body>
-<div  layout:fragment="content" class="container mySpace">
-<div class="alert alert-info" th:if="${exist}">
+<div  layout:fragment="content" class="container mySpace content-box">
+<div class="alert alert-info" th:if="${exist}" >
 <p class="text text-center">
 User with this Email already Exist
 </p>
@@ -32,5 +32,121 @@ User with this Email already Exist
          <input type="submit" value="Submit" class="btn btn-primary"/>
          </form>
      </div>
+</body>
+</html>-->
+
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org"
+  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+  layout:decorate="~{fragments/main_layout}" >
+  
+<head>
+
+<title>Register Form</title>
+
+</head>
+
+<body>
+
+	<div  layout:fragment="content" class="container-fluid mySpace content">
+	
+		<div class="alert alert-info" th:if="${exist}" >
+	
+		<p class="text text-center">User with this Email already Exist</p>
+	
+		</div>
+		
+		
+		
+			<div class="row justify-content-center">
+							
+				<div class="col-lg-6 col-md-6 col-sm-9">
+				
+					<div class="content-box signUp">
+													
+						<h1 th:text="#{register.heading}"></h1>
+						
+						<hr>
+						
+						<form class="formDetails">
+					
+						<div class="form-group">
+						
+   							 <label for="formGroupExampleInput">Name</label>
+   							 <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Your Name">
+   							 
+  						</div>	
+  						
+  						<div class="form-group">
+						
+   							 <label for="formGroupExampleInput" th:text="#{company.label}"></label>
+   							 <input type="text" class="form-control" id="formGroupExampleInput">
+   							 
+  						</div>	
+  						
+  						<div class="form-group">
+  						
+						    <label for="exampleFormControlInput1" th:text="#{email.label}"></label>
+						    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+						    
+						</div>
+  						
+  						<div class="form-group">
+						
+   							 <label for="formGroupExampleInput" th:text="#{phone.label}"></label>
+   							 <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Your Number">
+   							 
+  						</div>
+  						
+  						
+  						 <div class="form-group">
+							    <label for="exampleFormControlSelect2">Company Type</label>
+							    
+							 <select class="custom-select">
+							 
+								  <option selected>Select</option>
+								  <option value="1" th:text="#{employee.label}"></option>
+								  <option value="2" th:text="#{general.agent.label}"></option>
+								  <option value="3" th:text="#{emloyer.label}"></option>
+								  <option value="4" th:text="#{carrier.label}"></option>
+								  <option value="5" th:text="#{techvendor.label}"></option>
+								  <option value="6" th:text="#{selectother}"></option>
+								  
+							</select>
+						</div>
+												
+						
+						<div class="form-group">
+				
+    						<label for="exampleFormControlTextarea1">Message</label>
+    						<textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Your Message" rows="3"></textarea>
+    						
+  						</div>
+
+
+						<button type="submit" class="btn btn-primary btn-block button">Submit</button>
+						
+  						
+						
+						</form>
+						
+								
+						
+					</div>		
+						
+								
+				
+				</div>			
+		
+			</div>
+		
+		
+		
+	</div>	
+	
+
+
+ 
 </body>
 </html>
