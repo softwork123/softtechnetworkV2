@@ -7,6 +7,7 @@
     background: #1d1d35 !important;
     padding-top: 5px !important;
     padding-bottom: 5px !important;   	
+    margin-bottom: 50px;
 }
 
 
@@ -54,11 +55,7 @@
     
   }
   
-  .content {
-  	margin-top: 11px !important;
-  	min-height: 100vh;
-  }
-  
+
   
   
 

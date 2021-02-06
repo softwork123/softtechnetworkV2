@@ -12,8 +12,7 @@
 }
 
 .content-box {
-	margin-top: 150px;
-    margin-bottom: 100px;
+	
     border: 1px solid black;
     padding: 30px;
     border-radius: 10px;
@@ -44,3 +43,10 @@
 	font-size: 15px;
 	font-weight: 400;
 }
+
+.content {
+	margin-top: 150px;
+    margin-bottom: 100px;
+    min-height: 80vh
+}
+
